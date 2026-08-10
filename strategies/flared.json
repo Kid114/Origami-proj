@@ -1,0 +1,32 @@
+{
+  "id": "flared-v1",
+  "limbShape": "flared",
+  "description": "Flared widening end — used for bells, trumpets, flower openings, and flared sleeves. Expands outward at the terminal end.",
+  "applicableGridSizes": [3, 4, 5, 6, 7],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Valley-fold the base into a narrow tube, keeping the far end wide",
+      "landmark": "Long edges inward, stopping before the distal end"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the flare section outward at an expanding angle",
+      "landmark": "Transition point from narrow to wide"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold each side of the flare to set the bell opening",
+      "landmark": "Flared edges"
+    },
+    {
+      "step": 4,
+      "action": "squash-fold",
+      "description": "Squash-fold the rim to create a clean circular opening",
+      "landmark": "Terminal rim"
+    }
+  ]
+}

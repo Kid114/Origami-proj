@@ -1,0 +1,32 @@
+{
+  "id": "forked-v1",
+  "limbShape": "forked",
+  "description": "Branching limb — used for antlers, mandibles, and split appendages. Divides into two or more prongs.",
+  "applicableGridSizes": [3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold the base into a narrow trunk strip",
+      "landmark": "Center grid column"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Split the upper portion with a mountain fold down the middle",
+      "landmark": "Center line from midpoint upward"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold each prong outward to separate the branches",
+      "landmark": "Each side of the split"
+    },
+    {
+      "step": 4,
+      "action": "valley-fold",
+      "description": "Valley-fold each prong tip to refine the branch endpoints",
+      "landmark": "Tip of each prong"
+    }
+  ]
+}

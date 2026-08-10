@@ -1,0 +1,33 @@
+{
+  "id": "ribbed-v1",
+  "limbShape": "ribbed",
+  "description": "Ribbed segment — used for insect abdomens, armored bodies, and textured surfaces with parallel ridges.",
+  "applicableGridSizes": [3, 4, 5, 6, 7],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the sheet into alternating ridge lines along the length",
+      "landmark": "Each horizontal grid line across the panel"
+    },
+    {
+      "step": 2,
+      "action": "valley-fold",
+      "description": "Valley-fold between each ridge to create the alternating rib pattern",
+      "landmark": "Midpoints between mountain folds"
+    },
+    {
+      "step": 3,
+      "action": "squash-fold",
+      "description": "Squash-fold the ends to cap the ribbed tube",
+      "landmark": "Both ends of the panel"
+    },
+    {
+      "step": 4,
+      "action": "repeat",
+      "description": "Repeat the ridge-valley pattern for each rib segment",
+      "repeatCount": 3,
+      "landmark": "Each subsequent rib"
+    }
+  ]
+}

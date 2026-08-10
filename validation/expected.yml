@@ -1,0 +1,73 @@
+# Validation set expected outcomes. One entry per photo.
+# Format:
+#   photo: filename in photos/
+#   category: animals | plants | simple-objects
+#   expected: success | failure
+#   notes: free-form
+#
+# Photos were collected from Wikimedia Commons (public/CC images) by
+# scripts/download_validation_photos.py. Expected outcomes are best-guess
+# annotations for the v1 pipeline; scripts/run_acceptance.py records the
+# actual outcomes in results.yml (authoritative for the acceptance gate).
+
+photos:
+  - photo: cat.jpg
+    category: animals
+    expected: success
+    notes: "Cat, single subject; v1 likely extracts a limb tree."
+  - photo: dog.jpg
+    category: animals
+    expected: success
+    notes: "Dog, single subject."
+  - photo: horse.jpg
+    category: animals
+    expected: failure
+    notes: "Likely busy outdoor scene; may fail object detection."
+  - photo: bird.jpg
+    category: animals
+    expected: failure
+    notes: "Bird in scene with background clutter."
+  - photo: goldfish.jpg
+    category: animals
+    expected: failure
+    notes: "Fish in water; low contrast silhouette."
+  - photo: frog.jpg
+    category: animals
+    expected: success
+    notes: "Frog, single subject, may produce tree."
+  - photo: cactus.jpg
+    category: plants
+    expected: failure
+    notes: "Pot + spines create many components."
+  - photo: mushroom.jpg
+    category: plants
+    expected: success
+    notes: "Single mushroom, clean silhouette."
+  - photo: rose_flower.jpg
+    category: plants
+    expected: failure
+    notes: "Complex flower shape, many parts."
+  - photo: maple_leaf.jpg
+    category: plants
+    expected: success
+    notes: "Leaf silhouette; limbs = leaf veins."
+  - photo: apple.jpg
+    category: simple-objects
+    expected: success
+    notes: "Single apple; smooth blob -> single limb."
+  - photo: scissors.jpg
+    category: simple-objects
+    expected: failure
+    notes: "Metal parts may segment into multiple components."
+  - photo: coffee_mug.jpg
+    category: simple-objects
+    expected: success
+    notes: "Single mug, clean subject."
+  - photo: wooden_chair.jpg
+    category: simple-objects
+    expected: failure
+    notes: "Chair has holes/complex silhouette."
+  - photo: book_stack.jpg
+    category: simple-objects
+    expected: failure
+    notes: "Stack of books, cluttered background."

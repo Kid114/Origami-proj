@@ -1,0 +1,26 @@
+{
+  "id": "tapered-v1",
+  "limbShape": "tapered",
+  "description": "Gradually narrowing limb — used for arms, legs, and tentacles that thin toward the end.",
+  "applicableGridSizes": [2, 3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Valley-fold both long edges inward with progressive narrowing toward the tip",
+      "landmark": "Grid lines converging from base width to tip width"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the center line to create the limb's back ridge",
+      "landmark": "Center longitudinal line"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold the tip to lock the taper and define the endpoint",
+      "landmark": "Tip"
+    }
+  ]
+}

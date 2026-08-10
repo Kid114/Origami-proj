@@ -1,0 +1,39 @@
+{
+  "id": "sphere-v1",
+  "limbShape": "sphere",
+  "description": "Rounded sphere for heads and bulbs.",
+  "applicableGridSizes": [3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold four corners toward center for octagonal base",
+      "landmark": "Diagonal creases corner to center"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Fold eight edges upward for sphere shape",
+      "landmark": "Octagon perimeter"
+    },
+    {
+      "step": 3,
+      "action": "repeat",
+      "description": "Repeat valley and mountain folds around segments",
+      "repeatCount": 8,
+      "landmark": "Each segment"
+    },
+    {
+      "step": 4,
+      "action": "reverse-fold",
+      "description": "Reverse-fold top inward to close sphere",
+      "landmark": "Top center"
+    },
+    {
+      "step": 5,
+      "action": "sink-fold",
+      "description": "Sink bottom opening to seal sphere",
+      "landmark": "Bottom center"
+    }
+  ]
+}

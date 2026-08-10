@@ -1,0 +1,32 @@
+{
+  "id": "curved-v1",
+  "limbShape": "curved",
+  "description": "Bent limb — used for arms, legs, and jointed appendages with a natural bend.",
+  "applicableGridSizes": [3, 4, 5, 6, 7],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold edges inward to create a narrow rectangular limb base",
+      "landmark": "Parallel to center line"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold at the midpoint to create the joint bend angle",
+      "landmark": "Midpoint cross grid line"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold at the joint to lock the bend and set the angle",
+      "landmark": "Joint crease"
+    },
+    {
+      "step": 4,
+      "action": "valley-fold",
+      "description": "Valley-fold the tip segment to define the endpoint direction",
+      "landmark": "Distal grid line"
+    }
+  ]
+}

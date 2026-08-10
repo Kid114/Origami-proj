@@ -1,0 +1,32 @@
+{
+  "id": "pinched-v1",
+  "limbShape": "pinched",
+  "description": "Pinched middle — used for wasp waists, hourglass shapes, and narrowed transitions between body segments.",
+  "applicableGridSizes": [3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Valley-fold both sides inward at the midpoint to create the pinch",
+      "landmark": "Center horizontal grid line"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the pinched section to lock the narrowed waist",
+      "landmark": "Pinch point"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold above and below the pinch to flare back out to full width",
+      "landmark": "Upper and lower boundaries of the pinch"
+    },
+    {
+      "step": 4,
+      "action": "valley-fold",
+      "description": "Valley-fold the top and bottom edges for clean termination",
+      "landmark": "Top and bottom edges"
+    }
+  ]
+}

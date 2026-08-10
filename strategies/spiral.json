@@ -1,0 +1,33 @@
+{
+  "id": "spiral-v1",
+  "limbShape": "spiral",
+  "description": "Curled spiral — used for snail shells, curled tails, and coiled shapes. Creates a tight helical wrap.",
+  "applicableGridSizes": [3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold the strip diagonally to start the spiral wrap",
+      "landmark": "Diagonal crease from corner"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the strip back over itself to continue the coil",
+      "landmark": "First wrap point"
+    },
+    {
+      "step": 3,
+      "action": "repeat",
+      "description": "Continue alternating valley and mountain folds, tightening the spiral inward",
+      "repeatCount": 3,
+      "landmark": "Each successive wrap"
+    },
+    {
+      "step": 4,
+      "action": "sink-fold",
+      "description": "Sink the tail end into the center to lock the spiral",
+      "landmark": "Spiral center"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "twisted-v1",
+  "limbShape": "twisted",
+  "description": "Helical twisted limb — used for spiraling horns, twisted trunks, and helical appendages. Creates a rotating form along the length.",
+  "applicableGridSizes": [3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Valley-fold the strip into a narrow rectangular base",
+      "landmark": "Long edges to center"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold at a diagonal to start the twist rotation",
+      "landmark": "Diagonal grid line from one corner"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold along the diagonal to lock the first twist segment",
+      "landmark": "Diagonal crease"
+    },
+    {
+      "step": 4,
+      "action": "repeat",
+      "description": "Repeat diagonal mountain and reverse folds to continue the helical twist",
+      "repeatCount": 3,
+      "landmark": "Each successive diagonal grid segment"
+    },
+    {
+      "step": 5,
+      "action": "valley-fold",
+      "description": "Valley-fold the tip to finish the twist endpoint",
+      "landmark": "Tip"
+    }
+  ]
+}

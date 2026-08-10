@@ -1,0 +1,33 @@
+{
+  "id": "pleated-v1",
+  "limbShape": "pleated",
+  "description": "Fan-like pleated shape — used for frills, crests, fins, and decorative collars. Alternating folds create an expandable fan.",
+  "applicableGridSizes": [3, 4, 5, 6, 7, 8],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "mountain-fold",
+      "description": "Mountain-fold along the first vertical grid line to start the pleat",
+      "landmark": "First vertical grid line"
+    },
+    {
+      "step": 2,
+      "action": "valley-fold",
+      "description": "Valley-fold along the next vertical grid line to create the first pleat pair",
+      "landmark": "Second vertical grid line"
+    },
+    {
+      "step": 3,
+      "action": "repeat",
+      "description": "Alternate mountain and valley folds across the remaining grid lines to form the full fan",
+      "repeatCount": 4,
+      "landmark": "Each successive grid line"
+    },
+    {
+      "step": 4,
+      "action": "squash-fold",
+      "description": "Squash-fold the base to gather and lock the pleats together",
+      "landmark": "Base edge of the fan"
+    }
+  ]
+}

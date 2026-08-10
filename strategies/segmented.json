@@ -1,0 +1,32 @@
+{
+  "id": "segmented-v1",
+  "limbShape": "segmented",
+  "description": "Multi-joint appendage — used for insect legs, antennae, and articulated limbs with distinct segments.",
+  "applicableGridSizes": [3, 4, 5, 6, 7],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold the strip into a narrow rectangular form",
+      "landmark": "Long edges to center"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold at each segment boundary to define joints",
+      "landmark": "Each transverse grid line"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold at each joint to create articulation points",
+      "landmark": "Each segment boundary"
+    },
+    {
+      "step": 4,
+      "action": "valley-fold",
+      "description": "Valley-fold the tip segment to a point for the final segment",
+      "landmark": "Distal tip"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "cone-v1",
+  "limbShape": "cone",
+  "description": "Tapered cone — used for tails, horns, and pointed projections. Narrows from base to tip.",
+  "applicableGridSizes": [2, 3, 4, 5, 6],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold both side edges inward at a slight angle, narrower at the top",
+      "landmark": "Taper from full width at bottom to half width at top"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Fold the tip down to lock the taper",
+      "landmark": "Tip point"
+    },
+    {
+      "step": 3,
+      "action": "valley-fold",
+      "description": "Fold the base edges inward to clean up the opening",
+      "landmark": "Base edge"
+    },
+    {
+      "step": 4,
+      "action": "squash-fold",
+      "description": "Squash the tip to create a sharper point",
+      "landmark": "Tip"
+    }
+  ]
+}

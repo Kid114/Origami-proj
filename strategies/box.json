@@ -1,0 +1,26 @@
+{
+  "id": "box-v1",
+  "limbShape": "box",
+  "description": "Rectangular box — used for body blocks, cargo holds, and squared segments. Creates a rigid rectangular volume.",
+  "applicableGridSizes": [3, 4, 5, 6, 8],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "mountain-fold",
+      "description": "Mountain-fold all four edges up to create side walls",
+      "landmark": "Each grid line marking the perimeter"
+    },
+    {
+      "step": 2,
+      "action": "valley-fold",
+      "description": "Valley-fold corners inward to lock adjacent walls together",
+      "landmark": "Corner diagonals"
+    },
+    {
+      "step": 3,
+      "action": "reverse-fold",
+      "description": "Reverse-fold the top rim inward for a clean finish",
+      "landmark": "Top edge of each wall"
+    }
+  ]
+}

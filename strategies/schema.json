@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FoldingStrategy",
+  "type": "object",
+  "required": ["id", "limbShape", "description", "foldRecipe"],
+  "properties": {
+    "id": {"type": "string", "description": "Unique strategy ID, e.g. 'cylinder-v1'"},
+    "limbShape": {"type": "string", "enum": ["cylinder", "cone", "box", "flat", "sphere", "tapered", "curved", "forked", "ribbed", "segmented", "spiral", "pleated", "pinched", "twisted", "flared", "other"]},
+    "description": {"type": "string"},
+    "applicableGridSizes": {"type": "array", "items": {"type": "integer"}, "minItems": 1},
+    "foldRecipe": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "action", "description"],
+        "properties": {
+          "step": {"type": "integer"},
+          "action": {"type": "string", "enum": ["mountain-fold", "valley-fold", "reverse-fold", "sink-fold", "squash-fold", "petal-fold", "unfold", "rotate", "repeat"]},
+          "description": {"type": "string"},
+          "creasePattern": {"type": "string", "description": "Relative path to a .fold file for this step, or inline FOLD JSON"},
+          "repeatCount": {"type": "integer"},
+          "landmark": {"type": "string", "description": "Human-readable landmark reference, e.g. 'align edge A to edge B'"}
+        }
+      }
+    }
+  }
+}

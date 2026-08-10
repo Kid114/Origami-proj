@@ -1,0 +1,26 @@
+{
+  "id": "flat-v1",
+  "limbShape": "flat",
+  "description": "Flat appendage — used for wings, fins, leaves, and decorative flaps. Creates a thin planar extension.",
+  "applicableGridSizes": [2, 3, 4, 5, 6, 7],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold the base sheet in half to create a double-layer flat panel",
+      "landmark": "Center horizontal line"
+    },
+    {
+      "step": 2,
+      "action": "mountain-fold",
+      "description": "Mountain-fold the outer edges inward for a clean border",
+      "landmark": "Outer grid lines"
+    },
+    {
+      "step": 3,
+      "action": "squash-fold",
+      "description": "Squash-fold the tip to spread the layers into a flat fan shape",
+      "landmark": "Distal tip"
+    }
+  ]
+}

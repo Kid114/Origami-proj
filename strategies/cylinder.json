@@ -1,0 +1,26 @@
+{
+  "id": "cylinder-v1",
+  "limbShape": "cylinder",
+  "description": "Basic cylinder — used for necks, body segments, and uniform-width limbs. Creates a rectangular flap folded into a tube.",
+  "applicableGridSizes": [2, 3, 4, 5, 6, 7, 8],
+  "foldRecipe": [
+    {
+      "step": 1,
+      "action": "valley-fold",
+      "description": "Fold the left third inward along the first vertical grid line",
+      "landmark": "Align to center grid line"
+    },
+    {
+      "step": 2,
+      "action": "valley-fold",
+      "description": "Fold the right third inward to overlap, forming a tube",
+      "landmark": "Meet the left folded edge"
+    },
+    {
+      "step": 3,
+      "action": "mountain-fold",
+      "description": "Lock the tube by folding the top flap down",
+      "landmark": "Top edge"
+    }
+  ]
+}
